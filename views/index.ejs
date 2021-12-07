@@ -1,9 +1,10 @@
-<meta name="viewport" content="width=500, initial-scale=1"> <!--This line of code is for mobile responsive -->
-
-<div class="BorderMargin">
+  <meta name="viewport" content="width=500, initial-scale=1"> <!--This line of code is for mobile responsive -->
   <h2>Trano mbizo Spine :p ;)</h2>
-  <image src = '/images/LED.png' alt="LED" style="width:150px;height:150px;">
-  
+  <image src = '/images/M_int_anim.gif' alt="NaSpine" style="width:340px;height:250px;  float: left;"></image> <br><br><br><br>
+  <br><br><br><br><br>
+  <br><br><br><br><br>
+<div class="BorderMargin">
+  <image src = '/images/images.png' alt="LED" style="width:280px;height:150px;">
 
   <form action="/led/on" method="post">
     <button type="submit" class="button">Jiro On </button>
@@ -13,8 +14,19 @@
   <a>Etat ny Jiro: <%=status %></a>
 </div>
 
- <image src = '/images/nodejs-logo.png' alt="NodeJS" style="width:180px;height:180px;  float: left;">
-  <image src = '/images/naspine_logo.png' alt="NodeJS" style="width:140px;height:180px;  float: left;">
+<div class="BorderMargin">
+  <image src = '/images/ventilateur.webp' alt="LED" style="width:280px;height:150px;">
+
+  <form action="/led/on" method="post">
+    <button type="submit" class="button">On </button>
+      <button type="submit" formmethod="post" formaction="/led/off" class="button button3">Off</button>
+  </form>
+
+  <a>Etat ny Ventilateur: <%=statuss %></a>
+</div>
+
+
+  
 
 <!-- The below code is only for look and styling -->
 <style>
