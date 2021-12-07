@@ -46,7 +46,7 @@ gpio.write(7, false, function(err) {
 
 //spine
 
-app.post('/led/on', function(req, res){
+app.post('/vent/on', function(req, res){
   gpio.write(11, true, function(err) {
           if (err) throw err;
           console.log('Written True to pin');
@@ -57,7 +57,7 @@ app.post('/led/on', function(req, res){
   });
   
   
-  app.post('/led/off', function(req, res){
+  app.post('/vent/off', function(req, res){
   gpio.write(11, false, function(err) {
           if (err) throw err;
           console.log('Written False to pin');
