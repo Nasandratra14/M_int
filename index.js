@@ -19,9 +19,6 @@ app.get('/', function(req, res){
  	res.render('index',{status:"Tsindrio ny bouton raha hanova ny etat-ny Jiro !!"});
 });
 
-app.get('/', function(req, res){ 
-  res.render('index',{statuss:"Tsindrio ny bouton raha hanova ny etat-ny Ventilateur!!"});
-});
 
 app.post('/led/on', function(req, res){
 gpio.write(7, true, function(err) {
@@ -51,7 +48,7 @@ app.post('/led/on', function(req, res){
           if (err) throw err;
           console.log('Written True to pin');
     console.log(path.join(__dirname, 'public'));
-    return res.render('index', {statuss: "Cool!! Mandeha ny Ventilateur ;) "});
+    return res.render('index', {status: "Cool!! Mandeha ny Ventilateur ;) "});
       });
   
   });
@@ -62,7 +59,7 @@ app.post('/led/on', function(req, res){
           if (err) throw err;
           console.log('Written False to pin');
     console.log(path.join(__dirname, 'public'));
-    return res.render('index',{statuss: "Ohh!! Maty ny Ventilateur :( "});
+    return res.render('index',{stats: "Ohh!! Maty ny Ventilateur :( "});
       });
   
   });
